@@ -1,0 +1,44 @@
+.about-box {
+    .about-box-hd {
+        position: relative;
+        line-height:24px;
+        padding-left: 34px;
+        h2 {
+            font-size: $baseFontSize+2px;
+            color: #ff5831;
+            padding-bottom: 30px;
+        }
+        .site-icon-about {
+            position:absolute;
+            left:0;
+            top:0;
+        }
+    }
+    .about-box-bd {
+        p {
+            line-height:20px;
+            color: $grayDark;
+            padding-bottom: 20px;
+        }
+        &.about-box-bdbg {
+            background: url('../images/map.gif') no-repeat top right;
+            padding: 10px 430px 0 0;
+            height: 200px;
+        }
+        &.about-box-p-bd {
+            @extend %clearfix;
+            a {
+                @extend %display;
+                @extend %float;
+                width:90px;
+                height:40px;
+                background-color:red;
+                margin:0 10px 10px 0;
+            }
+        }
+    }
+    &.about-box-contacts {
+        .about-box-hd {}
+    }
+    padding-bottom: 100px;
+}

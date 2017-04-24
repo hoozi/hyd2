@@ -1,0 +1,32 @@
+.icons-grid {
+    padding-bottom: 60px;
+    .icons-grid-list {
+        @extend %clearfix;
+        li {
+            @extend %float;
+            width: 190px;
+            text-align: center;
+            &.icons-grid-item2 {
+                margin:0 93px;
+            }
+            &.icons-grid-item3 {
+                margin-right: 92px;
+            }
+            i, span {
+                @extend %display;
+                @extend %center-block;
+            }
+            h2 {
+                padding-bottom: 15px;
+                font: {
+                    size: $baseFontSize+6px;
+                    weight: 500;
+                }
+            }
+            span {
+                line-height: 20px;
+                color: $gray;
+            }
+        }
+    }
+}

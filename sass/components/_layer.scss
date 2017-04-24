@@ -1,0 +1,27 @@
+.my-layer-skin {
+    .layui-layer-title {
+        background-color: #ff5831;
+        border: 0;
+        border-radius: 0;
+        color: $white;
+        font-weight: 500;
+    }
+    &.layui-layer-rim {
+        border-radius: 0;
+        border-width: 5px;
+    }
+    .layui-layer-setwin {
+        top: 10px;
+        a {
+            @extend %icons;
+            &.layui-layer-close1 {
+                width:22px;
+                height:22px;
+                background-position:-315px -22px;
+            }
+        }
+    }
+    .layui-layer-content {
+        padding:20px;
+    }
+}

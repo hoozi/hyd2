@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="css/member.css?v=1.0.0">
+</head>
+<body>
+<div class="site-hd">
+    <div class="site-top site-inner">
+        <h1 class="logo">
+            <a href="###" class="logo-link">
+                <i class="site-icon site-icon-logo"></i>
+                <b>订舱订车交易平台</b>
+            </a>
+        </h1>
+        <i class="site-icon site-icon-contacts">1001-200541</i>
+    </div>
+    <div class="site-nav">
+        <div class="site-inner">
+            <ul class="site-nav-list" id="J_siteNav">
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>首页</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd"></div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>在线订舱</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd"><div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>在线订车</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd"></div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>数据查询</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd">
+                        <span class="site-arrow site-nav-arrow"></span>
+                        <a href="###">箱动态查询</a>
+                    </div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>帮助中心</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd">
+                        <span class="site-arrow site-nav-arrow"></span>
+                        <a href="###">建议咨询</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="site-nav-login" id="J_siteNavLogin">
+                <div class="site-nva-login-hd">
+                    <!--<div class="site-nav-login-sign">
+                        <i class="site-icon site-icon-avatar">avatar</i>
+                        <a href="###">登录</a>
+                        <span class=""site-nav-split>|</span>
+                        <a href="###">立即注册</a>
+                    </div>-->
+                    <div class="site-nav-login-user">
+                        <i class="site-icon site-icon-avatar"></i>
+                        <a href="###" class="site-nav-login-name">
+                            <span>Admin</span>
+                            <span class="site-arrow site-nav-login-arrow"></span>
+                        </a>
+                        <span class=""site-nav-split>|</span>
+                        <a href="###">退出</a>
+                    </div>
+                </div>
+                <div class="site-nav-login-bd">
+                        <span class="site-arrow site-nav-arrow"></span>
+                        <a href="###">我的订单</a>
+                        <a href="###">在线充值</a>
+                        <a href="###" class="last">修改密码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-main">
+    <div class="site-inner">
+        <div class="member-container">
+            <div class="m-sidebar">
+                <div class="m-avatar">
+                    <img src="images/avatar.gif" alt="">
+                    <span>欢迎你，ADMIN123</span>
+                </div>
+                <ul class="m-list">
+                    <li><a href="###" class="m-selected">我的订单</a></li>
+                    <li><a href="###">在线充值</a></li>
+                    <li><a href="###">修改密码</a></li>
+                </ul>
+            </div>
+            <div class="m-content">
+                <div class="m-page">
+                    <div class="m-page-hd m-page-hd-inline">
+                        <h2 class="m-page-name">我的订单</h2>
+                        <div class="site-control site-control-inline">
+                            <div class="site-control-item site-control-item-date">
+                                <label for="">订单号:</label>
+                                <input type="text" class="site-input" placeholder="请输入订单号">
+                            </div>
+                            <div class="site-control-item site-control-item-date">
+                                <label for="">下单时间:</label>
+                                <input type="text" class="site-input" placeholder="请选择时间">
+                                <i class="site-icon site-icon-s-date"></i>
+                            </div>
+                            <div class="site-control-item site-control-item-date">
+                                <label for="">—</label>
+                                <input type="text" class="site-input" placeholder="请选择时间">
+                                <i class="site-icon site-icon-s-date"></i>
+                            </div>
+                            <div class="site-control-item site-control-item-date">
+                                <input type="button" value="查询" class="site-btn site-btn-mid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-page-bd">
+                         <div class="table-mod-viewport bill-table-mod-viewport">
+                             <table class="table-mod-wrap">
+                                 <colgroup>
+                                    <col class="table-mod-w bill-mod-w1">
+                                    <col class="table-mod-w bill-mod-w2">
+                                    <col class="table-mod-w bill-mod-w3">
+                                    <col class="table-mod-w bill-mod-w4">
+                                    <col class="table-mod-w bill-mod-w5">
+                                    <col class="table-mod-w bill-mod-w6">
+                                    <col class="table-mod-w bill-mod-w7">
+                                    <col class="table-mod-w bill-mod-w8">
+                                    <col class="table-mod-w bill-mod-w9">
+                                    <col class="table-mod-w bill-mod-w10">
+                                    <col class="table-mod-w bill-mod-w11">
+                                    <col class="table-mod-w bill-mod-w12">
+                                    <col class="table-mod-w bill-mod-w13">
+                                    <col class="table-mod-w bill-mod-w14">
+                                    <col class="table-mod-w bill-mod-w15">
+                                    <col class="table-mod-w bill-mod-w16">
+                                 </colgroup>
+                                 <thead class="table-mod-hd">
+                                     <tr>
+                                         <th rowspan="2">订单号</th>
+                                         <th rowspan="2">状态</th>
+                                         <th rowspan="2">订单类型</th>
+                                         <th rowspan="2">起始港</th>
+                                         <th rowspan="2">装港</th>
+                                         <th rowspan="2">卸港</th>
+                                         <th rowspan="2">目的港</th>
+                                         <th rowspan="2">船名／航次</th>
+                                         <th rowspan="2">航线</th>
+                                         <th colspan="5" class="b-bottom b-left b-right">运价</th>
+                                         <th rowspan="2">总金额</th>
+                                         <th rowspan="2">操作</th>
+                                     </tr>
+                                     <tr>
+                                         <th class="b-left b-right">20'</th>
+                                        <th class="b-right">40'</th>
+                                        <th class="b-right">40H</th>
+                                        <th class="b-right">20RF</th>
+                                        <th class="b-right">40RF</th>
+                                     </tr>
+                                 </thead>
+                                 <tbody id="bill-content">
+                                     <tr>
+                                         <td>144342</td>
+                                         <td><span class="no-pay">未支付</span></td>
+                                         <td>订舱并订车</td>
+                                         <td>上海</td>
+                                         <td>上海</td>
+                                         <td>大连</td>
+                                         <td>大连</td>
+                                         <td>宏泰22/221S</td>
+                                         <td>CF18</td>
+                                         <td>0</td>
+                                         <td>1</td>
+                                         <td>1</td>
+                                         <td>0</td>
+                                         <td>1</td>
+                                         <td><span class="imp">¥20141</span></td>
+                                         <td><a href="###" class="site-btn site-btn-empty">取消</a></td>
+                                     </tr>
+                                     <tr>
+                                         <td>144342</td>
+                                         <td><span class="complete">完成</span></td>
+                                         <td>订舱并订车</td>
+                                         <td>上海</td>
+                                         <td>上海</td>
+                                         <td>大连</td>
+                                         <td>大连</td>
+                                         <td>宏泰22/221S</td>
+                                         <td>CF18</td>
+                                         <td>0</td>
+                                         <td>1</td>
+                                         <td>1</td>
+                                         <td>0</td>
+                                         <td>1</td>
+                                         <td><span class="imp">¥20141</span></td>
+                                         <td><a href="###" class="site-btn site-btn-empty">评价</a></td>
+                                     </tr>
+                                     <tr>
+                                         <td>144342</td>
+                                         <td><span class="init">初始</span></td>
+                                         <td>订舱并订车</td>
+                                         <td>上海</td>
+                                         <td>上海</td>
+                                         <td>大连</td>
+                                         <td>大连</td>
+                                         <td>宏泰22/221S</td>
+                                         <td>CF18</td>
+                                         <td>0</td>
+                                         <td>1</td>
+                                         <td>1</td>
+                                         <td>0</td>
+                                         <td>1</td>
+                                         <td><span class="imp">¥20141</span></td>
+                                         <td>
+                                             <a href="###" class="site-btn site-btn-sr-pay">支付</a>
+                                             <a href="###" class="site-btn site-btn-sr-upload">上传</a>
+                                             <a href="###" class="site-btn site-btn-sr-view">查看</a>
+                                        </td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                             <div class="bill-page-container page-container">
+                                 <div class="page">
+                                    <a href="###" class="jp-prev jp-disable">&lt;</a>
+                                    <a href="###" class="jp-current">1</a>
+                                    <a href="###">2</a>
+                                    <a href="###">3</a>
+                                    <span class="expc">...</span>
+                                    <a href="###" class="jp-next">&gt;</a>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="m-page m-page-inner">
+                    <div class="m-page-hd m-page-hd-inline">
+                        <h2 class="m-page-name">在线充值</h2>
+                    </div>
+                    <div class="m-page-bd m-page-bd-bg">
+                         <div class="m-page-form">
+                             <div class="site-control">
+                                <div class="site-control-item">
+                                    <label for="">充值金额:</label>
+                                    <input type="text" class="site-input page-form-len-input">
+                                    <div class="recharge-info">
+                                        <span class="site-arrow site-arrow-info"></span>
+                                        <span>可支付余额:2000.00元</span>
+                                    </div>
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="" class="select-name">支付方式:</label>
+                                    <div class="select-box pay-selected" data-type="alipay">
+                                        <i class="site-icon site-icon-radio"></i>
+                                        <img src="images/alipay.gif" alt="">
+                                    </div>
+                                    <div class="select-box" data-type="yl">
+                                        <i class="site-icon site-icon-radio"></i>
+                                        <img src="images/yl.gif" alt="">
+                                    </div>
+                                </div>
+                                <div class="site-control-item pay-item">
+                                    <input type="button" value="充值" class="site-btn site-btn-pay">
+                                </div>
+                                
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="m-page m-page-inner">
+                    <div class="m-page-hd m-page-hd-inline">
+                        <h2 class="m-page-name">在线支付</h2>
+                    </div>
+                    <div class="m-page-bd m-page-bd-bg">
+                        <div class="bill-info-hd">
+                            <span class="bill-no">海运订单号：434525925258035</span>
+                            <span class="t-price">需支付金额：<b>¥20111.00</b></span>
+                        </div>
+                         <div class="m-page-form">
+                             <div class="site-control">
+                                <div class="site-control-item">
+                                    <label for="">线上线下标准:</label>
+                                    <select name="" class="site-select" id=""></select>
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="">是否用余额:</label>
+                                    <label for="">
+                                        <input type="radio" name="" id=""> 是
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="" id=""> 否
+                                    </label>
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="" class="select-name">支付方式:</label>
+                                    <div class="select-box pay-selected" data-type="alipay">
+                                        <i class="site-icon site-icon-radio"></i>
+                                        <img src="images/alipay.gif" alt="">
+                                    </div>
+                                    <div class="select-box" data-type="yl">
+                                        <i class="site-icon site-icon-radio"></i>
+                                        <img src="images/yl.gif" alt="">
+                                    </div>
+                                </div>
+                                <div class="site-control-item pay-item">
+                                    <input type="button" value="确定支付" class="site-btn site-btn-pay">
+                                </div> 
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="m-page m-page-inner">
+                    <div class="m-page-hd m-page-hd-inline">
+                        <h2 class="m-page-name">修改密码</h2>
+                    </div>
+                    <div class="m-page-bd m-page-bd-bg">
+                         <div class="m-page-form">
+                             <div class="site-control password-control">
+                                <div class="site-control-item">
+                                    <label for="">原密码</label>
+                                    <input type="text" name="" id="" class="site-input">
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="">新密码</label>
+                                    <input type="text" name="" id="" class="site-input">
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="">确认新密码</label>
+                                    <input type="text" name="" id="" class="site-input">
+                                </div>
+                                <div class="site-control-item pay-item">
+                                    <input type="button" value="保存" class="site-btn site-btn-pay">
+                                </div> 
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="m-page m-page-inner">
+                    <div class="m-page-hd m-page-hd-inline">
+                        <h2 class="m-page-name">订单评价</h2>
+                    </div>
+                    <div class="m-page-bd">
+                         <div class="m-page-form">
+                             <div class="site-control assess-control">
+                                <div class="site-control-item">
+                                    <label for="">服务态度:</label>
+                                    <div id="service-raty1" class="service-raty"></div>
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="">服务质量:</label>
+                                    <div id="service-raty2" class="service-raty"></div>
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="">诚信度:</label>
+                                    <div id="service-raty3" class="service-raty"></div>
+                                </div>
+                                <div class="site-control-item">
+                                    <label for="">评论:</label>
+                                    <textarea name="" id="" class="assess-text"></textarea>
+                                </div>
+                                <div class="site-control-item">
+                                    <input type="button" value="提交评论" class="site-btn site-btn-pay">
+                                </div> 
+                            </div>
+                         </div>
+                         <div class="bill-info-block">
+                            <div class="bill-info-b-hd">
+                                <b>订单信息</b>
+                            </div>
+
+                            <div class="bill-info-b-bd">
+                                <p>订单号：1334142</p>
+                                <p>起始港—目的港：上海—大连</p>
+                                <p class="bill-bor">支付方式：支付宝</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-ft">
+    <div class="site-sub-nav site-inner">
+        <a href="###">关于我们</a>
+        <a href="###">联系我们</a>
+        <a href="###">网站声明</a>
+        <a href="###">合作伙伴</a>
+        <a href="###">用户协议</a>
+        <a href="###">常见问题</a>
+    </div>
+    <div class="site-ft-bt site-inner">
+        <p class="site-info">Copyright©2015 All rights Reserved 版权所有 宁波港通顺达物流有限公司 浙ICP备06015188号-3<i class="site-icon site-icon-p"></i></p>
+    </div>
+</div>
+<script src="js/site/Mini/Mini.js"></script>
+<script src="js/site/member.js?v=1.0.0"></script>
+</body>
+</html>

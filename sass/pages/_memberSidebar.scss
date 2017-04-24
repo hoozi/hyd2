@@ -1,0 +1,41 @@
+.m-sidebar {
+    position: absolute;
+    left:0;
+    top:50px;
+    width:150px;
+    border: 1px solid #d8dce2;
+    background-color: $white;
+    .m-avatar {
+        @extend %center-block;
+        padding-top:30px;
+        width:110px;
+        img {
+            @extend %display;
+            @extend %center-block;
+            width: 80px;
+        }
+        span {
+            @extend %display;
+            padding-top: 25px
+        }
+        padding-bottom: 15px;
+    }
+    .m-list {
+        li {
+            text-align:center;
+            a {
+                @extend %display;
+                width: $fullWidth;
+                text-align: center;
+                line-height: 40px;
+                color: $grayDark;
+                &:hover,
+                &.m-selected {
+                    background-color: #ff5831;
+                    color: $white;
+                }
+            }
+            
+        }
+    }
+}

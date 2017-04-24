@@ -1,0 +1,48 @@
+.page-container {
+    @extend %clearfix;
+    padding: 20px 0;
+    .page {
+        @include float(right);
+        a, span {
+            @include display(inline-block);
+            vertical-align:middle;
+            margin:0 2px;
+        }
+        a {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #d4d4d4;
+            line-height:20px;
+            text-align: center;
+            color: $grayDark;
+            &:hover, &.jp-current {
+                background-color: #ff5831;
+                color: $white;
+                border-color: #ff5831;
+            }
+            &.j-prev,&.j-next {
+                font-family: $fontCn;
+            }
+        }
+        .page-control {
+            padding-left: 30px;
+            line-height:22px;
+            color: $grayDark;
+            input {
+                @include display(inline-block);
+                vertical-align: middle;
+            }
+            .page-input {
+                width:35px;
+                height: 20px;
+                border:1px solid #d4d4d4;
+                line-height:20px;
+                color: $grayDark;
+                text-align: center;
+            }
+            .site-btn-page {
+                margin-left: 5px;
+            }
+        }
+    }
+}

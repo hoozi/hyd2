@@ -1,0 +1,80 @@
+.site-btn {
+    @include display(inline-block);
+    background-color: #ff5831;
+    border: 0;
+    color: $white;
+    text-align: center;
+}
+
+.site-btn-bigger {
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    font-size: $baseFontSize+2px;
+}
+
+.site-btn-sr {
+    width: 48px;
+    border: 1px solid #e23f19;
+    border-radius: 3px;
+    line-height: 22px;
+}
+
+.site-btn-page {
+    width: 50px;
+    height: 22px;
+    line-height:22px;
+}
+
+.site-btn-mid {
+    width:70px;
+    height:32px;
+    line-height:32px;
+}
+
+.site-btn-booking {
+    width: 58px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    background-color: $white;
+    border-radius:3px;
+    color: $grayDark;
+    line-height:26px;
+    &:hover {
+        background-color: #87b3f0;
+        border-color: #87b3f0;
+        color: $white;
+    }
+}
+
+.site-btn-empty {
+    width:55px;
+    height:20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background-color: $white;
+    color: $black;
+    line-height: 20px;
+    &:hover {
+        border-color: $black;
+    }
+}
+.site-btn-sr-pay,
+.site-btn-sr-upload,
+.site-btn-sr-view {
+    width:32px;
+    height:22px;
+    border-radius:3px;
+    line-height:22px;
+}
+.site-btn-sr-upload {
+    background-color: #87b3f0;
+}
+.site-btn-sr-view {
+    background-color: #f1a212;
+}
+
+.site-btn-pay {
+    width:120px;
+    height:35px;
+}

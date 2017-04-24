@@ -1,0 +1,17 @@
+{
+  "name": "hyd2",
+  "description": "hyd2 project",
+  "main": "index.js",
+  "authors": [
+    "AngryPanda <287036406@qq.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hoozi/hyd2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,21 @@
+.news-detail {
+    padding-top: 50px;
+    h2 {
+        text-align: center;
+        padding-bottom: 20px;
+        font: {
+            size: $baseFontSize*2;
+            weight: 500;
+        }
+    }
+    .news-info {
+        color: $gray;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .news-content {
+        line-height:20px;
+        color: $grayDark;
+        padding-bottom: 100px;
+    }
+}

@@ -1,0 +1,50 @@
+//config
+@charset "UTF-8";
+
+// 开关设置
+$lte7:                  true !default; //是否兼容ie6-7
+$filter:                false !default; //是否为ie6-8开启css3滤镜兼容，常用于渐变背景 
+$printStyleSwitch:      false !default; //是否开启打印样式
+
+// font
+$baseFontSize:          12px !default;
+$baseLineHeight:        1.5 !default;
+$fontCn:                "SimSun"; //宋体
+$fontYaHei:             "Microsoft Yahei"; //微软雅黑
+$baseFontFamily:        $fontCn, Helvetica, Tahoma, sans-serif !default;
+
+// 基本颜色
+$black:                 #333 !default;
+$orange:	            #ff5831 !default;
+$blue:					#097ffd !default;
+$blueLight:				#f0f5f7 !default;
+$yellow:				#ffffcb !default;
+$gray:					#999 !default;
+$grayDark:				#666 !default;
+$grayLight:				#e9e9e9 !default;
+$grayLighter:			#f2f2f2 !default;
+$red:                   #cc0000 !default;
+$white:					#fff !default;
+
+// 页面基本颜色
+$mainBgColor:           #fafafa !default;
+$bodyBgColor:			#30303c;
+$hoverColor:            $orange;
+
+// radius
+$baseRadius:            5px !default;
+$smallRadius:           3px !default;
+
+// z-index
+$zindexDropdown:        1000 !default;
+$zindexTooltip:         1020 !default;
+$zindexModal:           1100 !default;
+$zindexPromo:           100 !default;
+
+// layout相关
+$innerWidth:            1040px !default;
+$fullWidth:			    100% !default;
+$fullHeight:			100% !default;
+
+// icon相关
+$iconsPath:              '../images/siteicons.png';

@@ -1,0 +1,204 @@
+.table-mod-viewport {
+    .table-mod-hd {
+        background-color: #f4f5f9;
+        @include bor($dir:bottom, $color:#d8dce2, $size: 2px);
+    }
+    .table-mod-wrap {
+        width: $fullWidth;
+        table-layout: fixed;
+        //border-top: 1px solid #d8dce2;
+        .table-mod-w {
+            text-align:center;
+        }
+        .b-top {
+            @include bor($dir:top, $color:#d8dce2);
+        }
+        .b-bottom {
+            @include bor($dir:bottom, $color:#d8dce2);
+        }
+        .b-left {
+            @include bor($dir:left, $color:#d8dce2);
+        }
+        .b-right {
+            @include bor($dir:right, $color:#d8dce2);
+        }
+        th {
+            font-weight:400;
+        }
+        td {
+            text-align: center;
+        }
+        .imp {
+            color: #ff5831;
+        }
+    }
+    .layer-table-mod {
+        .table-mod-hd {
+            border-bottom-width:1px;
+        }
+        tr th,
+        tr td {
+            border: 1px solid #d8dce2;
+            padding:5px;
+        }
+    }
+}
+
+.service-table-mod-viewport {
+    color: $grayDark;
+    border-width: 2px;
+    border-bottom-width: 1px;
+    border-color: #d8dce2;
+    border-top-color: #ff5831;
+    border-style: solid;
+    .table-mod-hd {
+        border-bottom-width: 1px;
+    }
+    th, td {
+        padding:10px;
+    }
+    td {
+        @include bor($dir: bottom, $color:#d6dbe1);
+    }
+    th {
+        padding:15px;
+    }
+    .table-detail-link {
+        color: #5798be;
+    }
+}
+
+.booking-table-mod-viewport {
+    color: $grayDark;
+    tr th {
+        padding: 3px;
+    }
+    .booking-mod-w1 {
+        width: 10%;
+    }
+    .booking-mod-w2 {
+        width: 10%;
+    }
+    .booking-mod-w3 {
+        width: 8%;
+    }
+    .booking-mod-w4 {
+        width: 9%;
+    }
+    .booking-mod-w5 {
+        width: 10%;
+    }
+    .booking-mod-w6 {
+        width:10%;
+    }
+    .booking-mod-w7 {
+        width:5%;
+    }
+    .booking-mod-w8 {
+        width:5%;
+    }
+    .booking-mod-w9 {
+        width:5%;
+    }
+    .booking-mod-w10 {
+        width:5%;
+    }
+    .booking-mod-w11 {
+        width:5%;
+    }
+    .booking-mod-w12 {
+        width:10%;
+    }
+    .booking-mod-w13 {
+        width: 8%;
+    }
+
+    .booking-t-mod-w1 {
+        width:15%;
+    }
+    .booking-t-mod-w2 {
+        width:10%;
+    }
+    .booking-t-mod-w3 {
+        width:10%;
+    }
+    .booking-t-mod-w4 {
+        width:10%;
+    }
+    .booking-t-mod-w5 {
+        width:10%;
+    }
+    .booking-t-mod-w6 {
+        width:10%;
+    }
+    .booking-t-mod-w7 {
+        width:15%
+    }
+    .booking-t-mod-w8 {
+        width:12%;
+    }
+    .booking-t-mod-w9 {
+        width:8%;
+    }
+    tbody {
+        tr:hover {
+            background-color: #f9f9fb;
+        }
+    }
+}
+
+.bill-table-mod-viewport {
+    @include bor($dir:top, $color:#d8dce2);
+    .table-mod-hd {
+        color: $gray;
+    }
+    .bill-mod-w1 {
+        width: 6%;
+    }
+    .bill-mod-w2 {
+        width: 6%;
+    }
+    .bill-mod-w3 {
+        width: 7%;
+    }
+    .bill-mod-w4,
+    .bill-mode-w5,
+    .bill-mod-w6,
+    .bill-mod-w7 {
+        width: 6%
+    }
+    .bill-mod-w8 {
+        width: 8%;
+    }
+    .bill-mod-w9 {
+        width: 7%;
+    }
+    .bill-mod-w10,
+    .bill-mod-w11,
+    .bill-mod-w12 {
+        width: 5%;
+    }
+    .bill-mod-w13,
+    .bill-mod-w14 {
+        width: 5%;
+    }
+    .bill-mod-w15 {
+        width: 7%;
+    }
+    .bill-mod-w16 {
+        width: 13%;
+    }
+    tr td {
+        padding: 10px 0;
+        @include bor($dir: bottom, $color:#d6dbe1);
+    }
+    .no-pay {
+        color: #ff5831;
+    }
+    .complete {
+        color: #339900;
+    }
+    .init {
+        color: $gray;
+    }
+}

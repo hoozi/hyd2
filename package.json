@@ -1,0 +1,30 @@
+{
+  "name": "hyd2",
+  "version": "1.0.0",
+  "description": "hyd2 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run api & npm run server & npm run sass",
+    "server": "http-server -c-1 -P http://127.0.0.1:3000",
+    "api": "json-server api.json",
+    "sass": "sass --watch --style compressed sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoozi/hyd2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoozi/hyd2/issues"
+  },
+  "homepage": "https://github.com/hoozi/hyd2#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "json-server": "^0.9.6",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

@@ -1,0 +1,76 @@
+.hot {
+    @extend %clearfix;
+    .hot-grid {
+        @extend %float;
+        width: 760px;
+        border-width: 2px;
+        border-color: #d8dce2;
+        border-top-color: #ff5831;
+        border-style: solid;
+        .hot-grid-hd {
+            @extend %clearfix;
+            @include bor($dir: bottom, $color: #d8dce2);
+            padding: 0 20px;
+            line-height: 40px;
+            h2 {
+                @extend %float;
+                color: #ff5831;
+                font: {
+                    size: $baseFontSize+6px;
+                    weight: 500;
+                    family: $fontYaHei
+                }
+            }
+            a {
+                @include float(right);
+                font-family: $fontCn;
+                color: $grayDark;
+            }
+        }
+        .hot-grid-bd {
+            .hot-mod-w1 {
+                width:20%;
+            }
+            .hot-mod-w2 {
+                width:15%;
+            }
+            .hot-mod-w3 {
+                width:10%;
+            }
+            .hot-mod-w4 {
+                width:10%;
+            }
+            .hot-mod-w5 {
+                width:10%;
+            }
+            .hot-mod-w6 {
+                width:10%;
+            }
+            .hot-mod-w7 {
+                width:15%
+            }
+            .hot-mod-w8 {
+                width:10%
+            }
+            .site-icon-s,.site-icon-s2 {
+                @include display(inline-block);
+                margin: 0 5px;
+                vertical-align: middle;
+            }
+            .table-mod-viewport {
+                @include bor($dir:bottom, $color: #ebebeb);
+            }
+            .table-mod-wrap td {
+                padding: 5px 0;
+            }
+            .roll-container {
+                height: 280px;
+                overflow: hidden;
+            }
+        }
+    }
+    .an {
+        @include float(right);
+
+    }
+}

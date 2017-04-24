@@ -1,0 +1,100 @@
+$priceSearchColor:  #ff5831;
+
+.price-search-container {
+    position: absolute;
+    margin-left:-520px;
+    left: 50%;
+    z-index: 200;
+    top: 52px;
+    width: 540px;
+    height: 280px;
+    padding: 3px;
+    background-color: $priceSearchColor;
+    .price-search-tab {
+        position: relative;
+        padding-left: 90px;
+        height: $fullHeight;
+        .price-search-nav {
+            position: absolute;
+            left: 0;
+            top: 0;
+            a {
+                @extend %display;
+                width: 90px;
+                line-height: 70px;
+                text-align: center;
+                font-size: $baseFontSize+2px;
+                color: $white;
+                &.price-search-nav-selected {
+                    background-color: $white;
+                    color: $priceSearchColor;
+                }
+            }
+        }
+        .price-search-panel-container {
+            width: $fullWidth;
+            height: $fullHeight;
+            background-color: $white;
+            overflow: hidden;
+            .price-search-panel {
+                padding: 20px 20px 2px;
+                .price-input {
+                    border: 1px solid #d8dce2;
+                    width:400px;
+                    height: 47px;
+                    margin-bottom: 16px;
+                    line-height: 47px;
+                    overflow: hidden;
+                    .price-form-name,
+                    .price-form-input {
+                        @include display(inline-block);
+                        font-size: $baseFontSize+2px;
+                        vertical-align: middle;
+                    }
+                    .price-form-name {
+                        background-color: #f4f5f9;
+                        width: 75px;
+                        padding-right: 15px;
+                        line-height: inherit;
+                        text-align: right;
+                    }
+                    .price-form-input {
+                        margin-left: 15px;
+                        height: 47px;
+                        border: 0;
+                        line-height: inherit;
+                    }
+                    &.price-date {
+                        position: relative;
+                        .site-icon-date {
+                            position: absolute;
+                            right: 20px;
+                            top: 12px;
+                        }
+                    }
+                }
+                .price-submit {
+                    position: relative;
+                    border: 0;
+                    span {
+                        @extend %display;
+                        position: relative;
+                        padding-left: 20px;
+                        line-height:45px;
+                        .site-icon-an {
+                            position: absolute;
+                            left: 0;
+                            top: 14px;
+                        }
+                    }
+                    
+                    .site-btn-bigger {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

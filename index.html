@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css?v=1.0.0">
+</head>
+<body>
+<div class="site-hd">
+    <div class="site-top site-inner">
+        <h1 class="logo">
+            <a href="###" class="logo-link">
+                <i class="site-icon site-icon-logo"></i>
+                <b>订舱订车交易平台</b>
+            </a>
+        </h1>
+        <i class="site-icon site-icon-contacts">1001-200541</i>
+    </div>
+    <div class="site-nav">
+        <div class="site-inner">
+            <ul class="site-nav-list" id="J_siteNav">
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>首页</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd"></div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>在线订舱</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd"><div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>在线订车</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd"></div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>数据查询</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd">
+                        <span class="site-arrow site-nav-arrow"></span>
+                        <a href="###">箱动态查询</a>
+                    </div>
+                </li>
+                <li class="site-nav-item">
+                    <div class="site-nav-item-hd">
+                        <a href="###">
+                            <span>帮助中心</span>
+                        </a>
+                    </div>
+                    <div class="site-nav-item-bd">
+                        <span class="site-arrow site-nav-arrow"></span>
+                        <a href="###">建议咨询</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="site-nav-login" id="J_siteNavLogin">
+                <div class="site-nva-login-hd">
+                    <!--<div class="site-nav-login-sign">
+                        <i class="site-icon site-icon-avatar">avatar</i>
+                        <a href="###">登录</a>
+                        <span class=""site-nav-split>|</span>
+                        <a href="###">立即注册</a>
+                    </div>-->
+                    <div class="site-nav-login-user">
+                        <i class="site-icon site-icon-avatar"></i>
+                        <a href="###" class="site-nav-login-name">
+                            <span>Admin</span>
+                            <span class="site-arrow site-nav-login-arrow"></span>
+                        </a>
+                        <span class=""site-nav-split>|</span>
+                        <a href="###">退出</a>
+                    </div>
+                </div>
+                <div class="site-nav-login-bd">
+                        <span class="site-arrow site-nav-arrow"></span>
+                        <a href="###">我的订单</a>
+                        <a href="###">在线充值</a>
+                        <a href="###" class="last">修改密码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="promo">
+    <div class="promo-bd" id="J_promo">
+        <img src="images/banner.jpg" alt="" class="promo-item">
+        <img src="images/banner.jpg" alt="" class="promo-item">
+    </div>
+    <div class="promo-page"></div>
+    <div class="price-search-container site-inner">
+        <div class="price-search-tab" id="J_priceSearchTab">
+            <div class="price-search-nav">
+                <a href="#price-search-panel1" class="price-search-nav-item price-search-nav-selected">
+                    <span>舱位运价</span>
+                </a>
+                <a href="#price-search-panel2" class="price-search-nav-item">
+                    <span>陆运运价</span>
+                </a>
+            </div>
+            <div class="price-search-panel-container">
+                <div class="price-search-panel" id="price-search-panel1">
+                    <div class="price-control">
+                        <div class="price-input">
+                            <label class="price-form-name" for="init-port">起始港</label>
+                            <input type="text" class="price-form-input" id="init-port" placeholder="请输入起始港">
+                        </div>
+                        <div class="price-input">
+                            <label class="price-form-name" for="des-port">目的港</label>
+                            <input type="text" class="price-form-input" id="des-port" placeholder="请输入目的港">
+                        </div>
+                        <div class="price-input price-date">
+                            <label class="price-form-name" for="transport-date">运输时间</label>
+                            <input type="text" class="price-form-input" id="transport-date" onclick="WdatePicker()" placeholder="请选择运输时间">
+                            <i class="site-icon site-icon-date"></i>
+                        </div>
+                        <div class="price-input price-submit">
+                            <span>
+                                <i class="site-icon site-icon-an"></i>
+                                推荐物流代理商，门到门接送，发货省心又省钱！
+                            </span>
+                            <input type="button" value="查询" class="site-btn site-btn-bigger">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-search-panel" id="price-search-panel2">
+                    <div class="price-control">
+                        <div class="price-input">
+                            <label class="price-form-name" for="pro">省市</label>
+                            <input type="text" class="price-form-input" id="pro" placeholder="请输入省市">
+                        </div>
+                        <div class="price-input">
+                            <label class="price-form-name" for="qxz">区县镇</label>
+                            <input type="text" class="price-form-input" id="qxz" placeholder="请输入区县镇">
+                        </div>
+                        <div class="price-input">
+                            <label class="price-form-name" for="port">港口</label>
+                            <input type="text" class="price-form-input" id="port" placeholder="请输入港口">
+                        </div>
+                        <div class="price-input price-submit">
+                            <span>
+                                <i class="site-icon site-icon-an"></i>
+                                推荐物流代理商，门到门接送，发货省心又省钱！
+                            </span>
+                            <input type="button" value="查询" class="site-btn site-btn-bigger">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="index-mid">
+    <div class="icons-grid site-inner">
+        <ul class="icons-grid-list">
+            <li class="icons-grid-item icons-grid-item1">
+                <i class="site-icon site-icon-bc"></i>
+                <h2 class="icons-grid-item-hd">在线订舱</h2>
+                <span class="icons-grid-item-bd">全程一票制，先比价在线支付优惠多在线下单一件搞定</span>
+            </li>
+            <li class="icons-grid-item icons-grid-item2">
+                <i class="site-icon site-icon-bt"></i>
+                <h2 class="icons-grid-item-hd">在线订车</h2>
+                <span class="icons-grid-item-bd">全程一票制，先比价在线支付优惠多在线下单一件搞定</span>
+            </li>
+            <li class="icons-grid-item icons-grid-item3">
+                <i class="site-icon site-icon-sd"></i>
+                <h2 class="icons-grid-item-hd">数据查询</h2>
+                <span class="icons-grid-item-bd">全程一票制，先比价在线支付优惠多在线下单一件搞定</span>
+            </li>
+            <li class="icons-grid-item icons-grid-item4">
+                <i class="site-icon site-icon-my"></i>
+                <h2 class="icons-grid-item-hd">我的订单</h2>
+                <span class="icons-grid-item-bd">全程一票制，先比价在线支付优惠多在线下单一件搞定</span>
+            </li>
+        </ul>
+    </div>
+    <div class="hot site-inner">
+        <div class="hot-grid roll-grid">
+            <div class="hot-grid-hd">
+                <h2>热门航线</h2>
+                <a href="###">更多&gt;&gt;</a>
+            </div>
+            <div class="hot-grid-bd">
+                <div class="table-mod-viewport">
+                    <table class="table-mod-wrap table-mod-hd">
+                        <colgroup>
+                            <col class="table-mod-w hot-mod-w1">
+                            <col class="table-mod-w hot-mod-w2">
+                            <col class="table-mod-w hot-mod-w3">
+                            <col class="table-mod-w hot-mod-w4">
+                            <col class="table-mod-w hot-mod-w5">
+                            <col class="table-mod-w hot-mod-w6">
+                            <col class="table-mod-w hot-mod-w7">
+                            <col class="table-mod-w hot-mod-w8">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2">船名／航次</th>
+                                <th rowspan="2">起始地<i class="site-icon site-icon-s"></i>目的地</th>
+                                <th rowspan="2">离港日期</th>
+                                <th colspan="3" class="b-left b-right">运价</th>
+                                <th rowspan="2">运输条款</th>
+                                <th rowspan="2">操作</th>
+                            <tr>
+                                <th class="b-left b-top">20'GP</th>
+                                <th class="b-left b-top">40'GP</th>
+                                <th class="b-left b-right b-top">40HQ</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="roll-container" id="J_rollTable">
+                    <div class="roll-main">
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/221S1</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td><span class="imp">¥5615</span></td>
+                                        <td><span class="imp">¥5615</span></td>
+                                        <td><span class="imp">¥5615</span></td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/2212S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/2213S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/2241S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/2251S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/2621S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/2721S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/8221S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰229/221S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/10221S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/11221S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/12221S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-mod-viewport">
+                            <table class="table-mod-wrap">
+                                <colgroup>
+                                    <col class="table-mod-w hot-mod-w1">
+                                    <col class="table-mod-w hot-mod-w2">
+                                    <col class="table-mod-w hot-mod-w3">
+                                    <col class="table-mod-w hot-mod-w4">
+                                    <col class="table-mod-w hot-mod-w5">
+                                    <col class="table-mod-w hot-mod-w6">
+                                    <col class="table-mod-w hot-mod-w7">
+                                    <col class="table-mod-w hot-mod-w8">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>宏泰22/13221S</td>
+                                        <td>大连<i class="site-icon site-icon-s2"></i>上海</td>
+                                        <td>2017-04-13</td>
+                                        <td>¥3405</td>
+                                        <td>¥5615</td>
+                                        <td>¥5615</td>
+                                        <td>港到港</td>
+                                        <td><a href="###" class="site-btn site-btn-sr">查看</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="an">
+            <div class="an-hd">
+                <h2>公告</h2>
+                <a href="###"><i class="site-icon site-icon-anmore"></i></a>
+            </div>
+            <div class="an-bd">
+                <div class="an-roll" id="J_anRoll">
+                    <div class="an-roll-item" data-url="http://baidu.com">
+                        <h2>海上国际集装箱运输电子数据交换管理办法</h2>
+                        <p>现发布《海上国际集装箱运输电子数据交换管理办法》、《海上国际集装箱运输电子数据交换协议规则》、《海上国际集装箱运输电子数据交换电子报文替代纸面单证管理规则》、《海上国际集装箱运输电子数据交换很文传递和进出日业务流程规定》。以上规定自发布之日起施行。</p>
+                    </div>
+                    <div class="an-roll-item" data-url="http://qq.com">
+                        <h2>海上国际集装箱运输电子数据交换管理办法</h2>
+                        <p>现发布《海上国际集装箱运输电子数据交换管理办法》、《海上国际集装箱运输电子数据交换协议规则》、《海上国际集装箱运输电子数据交换电子报文替代纸面单证管理规则》、《海上国际集装箱运输电子数据交换很文传递和进出日业务流程规定》。以上规定自发布之日起施行。</p>
+                    </div>
+                </div>
+                <div class="an-control">
+                    <a href="###" class="an-control-prev" id="J_anPrev">
+                        <i class="site-icon site-icon-anPrev"></i>
+                    </a>
+                    <a href="###" class="an-control-next" id="J_anNext">
+                        <i class="site-icon site-icon-anNext"></i>
+                    </a>
+                    <a href="###" class="an-control-detail" id="J_anDetail">
+                        <i class="site-icon site-icon-detail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-ft">
+    <div class="site-sub-nav site-inner">
+        <a href="###">关于我们</a>
+        <a href="###">联系我们</a>
+        <a href="###">网站声明</a>
+        <a href="###">合作伙伴</a>
+        <a href="###">用户协议</a>
+        <a href="###">常见问题</a>
+    </div>
+    <div class="site-ft-bt site-inner">
+        <p class="site-info">Copyright©2015 All rights Reserved 版权所有 宁波港通顺达物流有限公司 浙ICP备06015188号-3<i class="site-icon site-icon-p"></i></p>
+    </div>
+</div>
+
+<script src="js/site/Mini/Mini.js"></script>
+<script src="js/site/index.js?v=1.0.0"></script>
+</body>
+</html>

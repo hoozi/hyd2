@@ -1,0 +1,15 @@
+.position {
+    color: $gray;
+    a, span {
+        @include display(inline-block);
+        vertical-align: middle;
+    }
+    a {
+        color: $grayDark;
+    }
+    .pos-arrow {
+        padding:0 2px;
+        color: $grayDark;
+        font-family: $fontCn;
+    }
+}

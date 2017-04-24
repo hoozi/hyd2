@@ -1,0 +1,138 @@
+%hover {
+    background: url('../images/nbg.gif') repeat-x;
+    color: $white;
+}
+%siteNavItemBd {
+    @include display(none);
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: $fullWidth;
+    z-index: $zindexDropdown;
+    .site-nav-arrow {
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        margin-left: -5px;
+    }
+    a {
+        @extend %display;
+        width: $fullWidth;
+        background-color: #f4f5f9;
+        line-height: 35px;
+        font-size: $baseFontSize;
+        color: $grayDark;
+        text-align: center;
+        &:hover {
+            color: #ff5831;
+        }
+    }
+}
+$siteNavColor:  #c3c7d3;
+$siteNavPipe:   #494958;
+
+.site-nav {
+    width: $fullWidth;
+    height: 48px;
+    background-color: $bodyBgColor;
+    margin-top: 12px;
+    .site-nav-list {
+        @extend %clearfix;
+        @extend %float;
+        position:relative;
+        .site-nav-item {
+            @extend %float;
+            position: relative;
+            .site-nav-item-hd > a {
+                @extend %display;
+                height: $fullHeight;
+                padding:0 30px;
+                line-height: 48px;
+                color: $siteNavColor;
+                font: {
+                    size: $baseFontSize+6px;
+                    family: $fontYaHei;
+                }
+                &:hover {
+                    @extend %hover;
+                }
+            }
+            .site-nav-item-bd {
+                @extend %siteNavItemBd;
+            }
+            &.site-nav-item-r {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            &.site-nav-item-hover {
+                .site-nav-item-hd a {
+                    @extend %hover;
+                }
+                .site-nav-item-bd {
+                    @extend %display;
+                }
+            }
+        }
+    }
+    .site-nav-login {
+        @include float(right);
+        position: relative;
+        .site-nav-login-sign,
+        .site-nav-login-user {
+            position: relative;
+            padding-left:35px;
+            &>a,&>span {
+                @extend %float;
+                margin-top: 15px;
+            }
+            &>span {
+                margin: 11px 10px 0;
+                color: $siteNavPipe;
+                font-size: $baseFontSize+6px;
+            }
+            a {
+                color: $siteNavColor;
+                &:hover {
+                    color: $white;
+                }
+            }
+            .site-icon-avatar {
+                position:absolute;
+                left: 0;
+                top: 12px;
+            }
+        }
+        .site-nav-login-sign {
+            
+        }
+        .site-nav-login-user {
+            .site-nav-login-name {
+                height: 48px;
+                position: relative;
+                padding-right:15px;
+                margin-top: 0;
+                line-height: 48px;
+                .site-nav-login-arrow {
+                    position:absolute;
+                    right:-1px;
+                    top:22px;
+                }
+            }
+        }
+        .site-nav-login-bd {
+            @extend %siteNavItemBd;
+            a {
+                border-bottom: 1px solid $siteNavColor;
+                &.last {
+                    border: 0;
+                }
+            }   
+        }
+        &.site-nav-login-hover {
+            .site-nav-login-bd {
+                @include display(block);
+            }
+        }
+    }
+}

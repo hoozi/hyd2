@@ -1,0 +1,123 @@
+.site-icon {
+    @extend %icons;
+}
+
+.site-icon-logo {
+    width: 141px;
+    height: 42px;
+    background-position: 0 0;
+}
+
+.site-icon-contacts {
+    width: 186px;
+    height: 67px;
+    background-position: 0 -47px;
+}
+
+.site-icon-avatar {
+    width:24px;
+    height:24px;
+    background-position: -231px -72px; 
+}
+
+.site-icon-page {
+    width: 11px;
+    height: 11px;
+    background-position: -220px 0;
+}
+.site-icon-page-hover {
+    background-position: -236px 0;
+}
+
+.site-icon-date {
+    width: 24px;
+    height: 22px;
+    background-position: -191px 0;
+}
+
+.site-icon-an {
+    width: 13px;
+    height: 12px;
+    background-position: -252px 0;
+}
+
+.site-icon-bc,
+.site-icon-bt,
+.site-icon-sd,
+.site-icon-my{
+    width:84px;
+    height:84px;
+    background-position-y: -119px;
+}
+.site-icon-bc {
+    background-position-x: 0;
+}
+.site-icon-bt {
+    background-position-x: -89px;
+}
+.site-icon-sd {
+    background-position-x: -178px;
+}
+.site-icon-my {
+    background-position-x: -267px;
+}
+
+.site-icon-s {
+    width:9px;
+    height: 7px;
+    background-position: -220px -16px;
+}
+
+.site-icon-s2 {
+    width:11px;
+    height:11px;
+    background-position: -231px -16px;
+}
+
+.site-icon-anmore {
+    width:18px;
+    height:12px;
+    background-position:-270px 0;
+}
+
+.site-icon-anPrev {
+    width:17px;
+    height:17px;
+    background-position:-293px 0;
+}
+
+.site-icon-anNext {
+    width:17px;
+    height:17px;
+    background-position:-293px -22px;
+}
+
+.site-icon-detail {
+    width: 34px;
+    height: 17px;
+    background-position: -315px 0;
+}
+
+.site-icon-p {
+    width:16px;
+    height:18px;
+    background-position: -293px -44px;
+}
+
+.site-icon-about {
+    width:24px;
+    height:24px;
+    background-position: -191px -90px;
+}
+
+.site-icon-s-date {
+    width:16px;
+    height:16px;
+    background-position: -191px -93px
+}
+
+.site-icon-radio {
+    width:15px;
+    height:16px;
+    background-position:-191px -72px;
+}

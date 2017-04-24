@@ -1,0 +1,121 @@
+.service-control {
+    background-color: #f4f5f9;
+    //@include bor($size: 2px, $color: #ececec, $dir: bottom);
+    margin-bottom: 20px;
+    height: 32px;
+    padding: 10px 40px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+
+}
+
+.site-control {
+    &.site-control-inline {
+        @extend %clearfix;
+        .site-control-item {
+            @extend %float;
+        }
+    }
+    .site-control-item {
+        position: relative;
+        margin-right: 20px;
+        @extend %clearfix;
+        label {
+            @extend %float;
+            padding-right: 10px;
+            text-align:right;
+            line-height:32px;
+        }
+        .site-input {
+            height: 30px;
+            border: 1px solid #d2d2d2;
+            width: 153px;
+            padding-left: 5px;
+            line-height:30px;
+        }
+        .site-icon-s-date {
+             position: absolute;
+             right: 10px;
+             top: 7px;
+        }
+        .site-radio {
+
+        }
+        .site-select {
+            height: 30px;
+        }
+        &.site-control-inline {
+            @extend %float;
+        }
+        &.site-control-item-date {
+            margin-right: 10px;
+        }
+    }
+}
+
+.suggest-container {
+    background-color: #f4f5f9;
+    margin-bottom: 60px;
+}
+.suggest-form {
+    @extend %center-block;
+    width: 750px;
+    padding:60px 0;
+    .suggest-form-hd {
+        padding-bottom: 15px;
+        font-size: $baseFontSize+2px;
+        span {
+            font-weight: normal;
+            font-size: $baseFontSize;
+            color: $gray;
+        }
+    }
+    .suggest-full-input {
+        padding-left: 5px;
+        width: 743px;
+    }
+    .suggest-form-inline {
+        @extend %clearfix;
+        .suggest-form-hd,
+        .suggest-form-bd {
+            @extend %float;
+            padding-bottom: 0;
+        }
+        .suggest-form-hd {
+            padding-right: 20px;
+            line-height: 40px;
+        }
+        .site-control-item {
+            margin-right: 0;
+        }
+        .suggest-form-group {
+            margin-right: 20px;
+            //margin-top: 4px;
+        }
+    }
+    .suggest-form-item {
+        padding-bottom: 20px;
+        .site-input {
+            height: 38px;
+            line-height: 38px;
+        }
+        .suggest-len-input {
+            width: 309px;
+        }
+        .suggest-text {
+            width:730px;
+            height:140px;
+            padding: 10px;
+            border: 1px solid #d2d2d2;
+        }
+        .suggest-hf-input {
+            width: 260px;
+        }
+        .site-btn-mid {
+            margin-left: 58px;
+        }
+    }
+    
+    .site-control-item label {
+        line-height: 40px;
+    }
+}

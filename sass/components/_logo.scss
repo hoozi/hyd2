@@ -1,0 +1,27 @@
+$logoBorderColor:   #e0e0e0;
+
+.logo {
+    @extend %clearfix;
+    @extend %float;
+    position: relative;
+    margin-top: 20px;
+    .logo-link {
+        @extend %display;
+        @extend %float;
+        padding-left: 156px;
+        .site-icon-logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        b {
+            @extend %display;
+            padding:0 0 0 15px;
+            margin-top: 10px;
+            border-left: 1px solid $logoBorderColor;
+            font-size: $baseFontSize+2px;
+            color: $black;
+            line-height: 25px;
+        }
+    }
+}

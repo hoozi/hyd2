@@ -1,0 +1,181 @@
+.m-page {
+    border: 2px solid #d8dce2;
+    border-bottom-width: 1px;
+    margin-bottom: 40px;
+    .m-page-hd {
+        padding:30px 0 15px;
+        &.m-page-hd-inline {
+            @extend %clearfix;
+            .m-page-name {
+                @extend %float;
+                margin:0 15px 0 30px;
+                font-size: $baseFontSize+10px;
+            }
+            .site-control {
+                @extend %float;
+            }
+        }
+    }
+    .bill-page-container {
+        padding:10px 0;
+        text-align:center;
+        .page {
+            float:none;
+            @include display(inline-block);
+        }
+    }
+    &.m-page-inner {
+        padding: 40px;
+        .m-page-hd {
+            padding-top:0;
+        }
+        .m-page-hd-inline {
+            .m-page-name {
+                margin-left:0;
+            }
+        }
+        .m-page-bd {
+            position:relative;
+        }
+        .m-page-bd-bg {
+            background-color: #f9f9fb;
+        }
+        .bill-info-hd {
+            @extend %clearfix;
+            @include bor($dir:bottom, $color:#d8dce2, $size:2px);
+            padding:10px 20px;
+            .bill-no {
+                @extend %float;
+                padding-top:7px;
+            }
+            .t-price {
+                @include float(right);
+                b {
+                    font-size: $baseFontSize+8px;
+                    color:#ff5831;
+                }
+            }
+        }
+        .m-page-form {
+            @extend %center-block;
+            padding:20px 0;
+            width:715px;
+            .page-form-len-input {
+                width:280px;
+            }
+            .site-control-item {
+                padding-bottom: 20px;
+                .recharge-info {
+                    position: absolute;
+                    left: 370px;
+                    top: 0;
+                    height: 32px;
+                    padding:0 20px;
+                    line-height:32px;
+                    background-color: #ff5831;
+                    color: $white;
+                    .site-arrow-info {
+                        position: absolute;
+                        left:-6px;
+                        top:10px;
+                    }
+                }
+                .select-name {
+                    line-height:40px;
+                }
+                .select-box {
+                    @extend %float;
+                    margin-right:40px;
+                    position: relative;
+                    padding-left:25px;
+                    img {
+                        @extend %display;
+                        border: 1px solid #e6e5e5;
+                    }
+                    .site-icon-radio {
+                        position: absolute;
+                        left:0;
+                        top:12px;
+                    }
+                    &.pay-selected {
+                        .site-icon-radio {
+                            background-position: -211px -72px
+                        }
+                        img {
+                            border-color: #ff5831;
+                        }
+                    }
+                }
+            }
+            .pay-item {
+                padding-top: 20px;
+                @include bor($dir:top, $color:#d8dce2);
+                .site-btn-pay {
+                    margin-left:62px;
+                }
+            }
+            .password-control {
+                width:350px;
+                @extend %center-block;
+                label {
+                    width:80px;
+                    text-align: right;
+                }
+                .site-input {
+                    width: 200px;
+                }
+                .pay-item {
+                    padding:0;
+                    border:0;
+                    margin:0;
+                    text-align:center;
+                    .site-btn-pay {
+                        margin:0;
+                    }
+                }
+            }
+            .assess-control {
+                label {
+                    width: 60px;
+                    text-align: right;
+                }
+                .service-raty {
+                    @extend %float;
+                    width:300px;
+                }
+                .assess-text {
+                    width:400px;
+                    height:130px;
+                    padding: 10px;
+                    border:1px solid #d8dce2;
+                }
+                .site-btn-pay {
+                    margin-left:60px;
+                }
+            }
+        }
+        .bill-info-block {
+            position: absolute;
+            top:0;
+            right:0;
+            border:1px solid #d8dce2;
+            width:198px;
+            color:$grayDark;
+            .bill-info-b-hd {
+                background-color:#f4f5f9;
+                padding:0 10px;
+                line-height:36px;
+            }
+            .bill-info-b-bd {
+                padding:10px;
+                p {
+                    padding-bottom:10px;
+                    &.bill-bor {
+                        padding-top:10px;
+                        @include bor($dir:top, $style:dashed, $color:#d8dce2);
+                    }
+                }
+            }
+        }
+    }
+}

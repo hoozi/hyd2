@@ -1,0 +1,17 @@
+.news-list {
+    li {
+        @extend %clearfix;
+        padding-bottom:10px;
+        a {
+            @extend %float;
+            color: $grayDark;
+            &:hover {
+                color: #ff5831;
+            }
+        }
+        span {
+            @include float(right);
+            color: $gray;
+        }
+    }
+}

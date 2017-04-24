@@ -1,0 +1,96 @@
+body {
+    background-color: $bodyBgColor;
+}
+
+.site-inner {
+    @extend %center-block;
+    @extend %clearfix;
+    width: $innerWidth;
+}
+
+.site-hd {
+    background-color: $white;
+    .site-top {
+        .site-icon-contacts {
+            @include float(right)
+        }
+    }
+}
+
+.index-mid {
+    background-color: $white;
+    padding:50px 0 100px;
+}
+.page-main {
+    @extend %clearfix;
+    background-color: $white;
+}
+.sidebar {
+    @extend %float;
+    width: 198px;
+}
+.position {
+    padding: 20px 0;
+}
+.page-simple {
+    @include float(right);
+    width:800px;
+    padding-top: 78px;
+}
+.service-hd {
+    @extend %clearfix;
+    h2 {
+        @extend %float;
+        padding: 15px 0;
+        font: {
+            size: $baseFontSize+6px;
+            family: $fontYaHei;
+            weight: 500;
+        }
+    }
+    .position {
+        @include float(right);
+        padding: 19px 0;
+    }
+}
+.site-ft {
+    padding: 20px 0;
+    .site-sub-nav {
+        text-align:center;
+        a {
+            @include display(inline-block);
+            margin: 0 10px;
+            color: #9797ad;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .site-ft-bt{
+        padding-top:10px;
+        text-align: center;
+        color:#505061;
+        .site-info {
+            position:relative;
+            .site-icon-p {
+                @include display(inline-block);
+                vertical-align: middle;
+                margin:-1px 0 0 5px;
+            }
+        }
+    }
+    
+}
+.member-container {
+    padding:50px 0 50px 172px;
+    position: relative;
+    min-height: 500px;
+    .m-content {
+        width: $fullWidth;
+    }
+}
+.site-hd,
+.index-mid,
+.site-ft {
+    width: $fullWidth;
+}

@@ -1,0 +1,29 @@
+.sidebar-nav-list {
+    border: 1px solid #d6dbe1;
+    margin-top: 20px;
+    li {
+        a {
+            @extend %display;
+            line-height: 35px;
+            text-align:center;
+            position: relative;
+            width: $fullWidth;
+            color: $grayDark;
+            .site-arrow {
+                @include display(none);
+                position:absolute;
+                left: 55px;
+                top: 11px;
+            }
+            &:hover, &.sidebar-nav-selected {
+                background-color: #f4f5f9;
+                color: #ff5831;
+            }
+            &.sidebar-nav-selected {
+                .site-arrow {
+                    @extend %display;
+                }
+            }
+        }
+    }
+}

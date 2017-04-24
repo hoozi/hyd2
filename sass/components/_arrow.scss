@@ -1,0 +1,20 @@
+.site-arrow {
+    @extend %display;
+
+}
+
+.site-nav-arrow {
+    @include triangle(top, 8px, #f4f5f9);
+}
+
+.site-nav-login-arrow {
+    @include triangle(bottom, 5px, #c3c7d3);
+}
+
+.site-arrow-selected {
+    @include triangle(right, 6px, $grayDark);
+}
+
+.site-arrow-info {
+    @include triangle(left, 6px, #ff5831);
+}
