@@ -112,6 +112,9 @@
     .booking-mod-w13 {
         width: 8%;
     }
+    .booking-mod-w14 {
+        width: 18%;
+    }
 
     .booking-t-mod-w1 {
         width:15%;
@@ -139,6 +142,9 @@
     }
     .booking-t-mod-w9 {
         width:8%;
+    }
+    .booking-t-mod-w10 {
+        width:12%;
     }
     tbody {
         tr:hover {
@@ -200,5 +206,22 @@
     }
     .init {
         color: $gray;
+    }
+}
+
+.detail-info .detail-box {
+    .table-mod-hd {
+        border-bottom-width: 1px;
+    }
+    tr th,tr td {
+        border: 1px solid #d8dce2;
+        padding:10px;
+    }
+    .table-mod-title {
+        padding-left:20px;
+        text-align: left;
+        input {
+            margin:-1px 20px 0 0;
+        }
     }
 }

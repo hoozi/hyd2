@@ -1,0 +1,65 @@
+.sign-link {
+    padding-right: 15px;
+    line-height:45px;
+    text-align: right;
+    a {
+        color: #ff5831;
+    }
+}
+.sign-form {
+    width: 350px;
+    padding: 50px 0;
+    @extend %center-block;
+    .site-control-item {
+        margin-right:0;
+        padding-bottom: 10px;
+        line-height: 40px;
+        position:relative; 
+        label {
+            width:60px;
+            line-height: 40px;
+            text-align:right;
+        }
+        .site-input {
+            width:273px;
+            height: 40px;
+        }
+        .site-input-code {
+            width:170px;
+        }
+        .code {
+            @extend %display;
+            position:absolute;
+            right:0;
+            top:0;
+            height: 40px;
+            width: 94px;
+        }
+        &.sign-control-code {
+            padding-right: 95px;
+            position:relative;
+        }
+        a {
+            @extend %display;
+            position:absolute;
+            right:0;
+            top:0;
+            line-height: 40px;
+            color: $gray;
+        }
+    }
+    &.signup-form {
+        label {
+            width:70px;
+        }
+        .site-input {
+            width: 263px;
+        }
+        .site-control {
+            margin-bottom: 20px;
+        }
+        .site-btn-sign {
+            width:270px;
+        }
+    }
+}

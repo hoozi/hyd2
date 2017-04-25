@@ -1,0 +1,178 @@
+.detail-scroll {
+    border: 1px solid #d8dce2;
+    padding:5px;
+    height:60px;
+    overflow-y:auto;
+}
+
+.ctn-size-container {
+    padding:5px;
+    background-color: #f4f5f9;
+    border: 1px solid #d8dce2;
+    @extend %clearfix;
+    .ctn-size-item {
+        @extend %float;
+        margin: 5px;
+        width:85px;
+        border: 2px solid #d8dce2;
+        background-color: $white;
+        line-height:45px;
+        font-size:$baseFontSize+6px;
+        text-align:center;
+        cursor:pointer;
+        &.ctn-size-selected {
+            border-color: #ff5831;
+            background-color:#ffe7e1;
+        }
+        b {
+            @extend %display;
+            width:$fullWidth;
+            height:$fullHeight;
+        }
+    }
+    .count-item {
+        @extend %float;
+        position:relative;
+        &.count-item-group {
+            padding-left:130px;
+            height:24px;
+            line-height:24px;
+            color: $grayDark;
+            .count-group {
+                position:absolute;
+                left:40px;
+                top:0;
+                border:1px solid #d8dce2;
+                height:22px;
+                @extend %clearfix;
+                input {
+                    @extend %float;
+                    height:22px;
+                    border:0;
+                    line-height:22px;
+                    &.count-value {
+                        @include bor($dir:left,$color:#d8dce2);
+                        @include bor($dir:right,$color:#d8dce2);
+                        background-color:$white;
+                        width:40px;
+                        color: $black;
+                        text-align:center;
+                    }
+                    &.count-cut,
+                    &.count-add {
+                        width:20px;
+                        background-color: #f4f5f9;
+                    }
+                }
+            }
+        }
+        .site-btn-ctn {
+            margin-left: 30px;
+        }
+    }
+}
+.detail-control-table {
+    .detail-hd {
+        @extend %clearfix;
+        margin-bottom:10px;
+        h2 {
+            @extend %float;
+            font-size: $baseFontSize+2px;
+            span {
+                color: #ff5831;
+            }
+        }
+        .total-price {
+            @include float(right);
+            font-size: $baseFontSize+2px;
+            span {
+                color:#ff5831;
+                font-size: $baseFontSize+4px;
+            }
+        }
+    }
+    .detele-ctn {
+        color: #5798be;
+    }
+    .table-mod-viewport {
+        border:1px solid #d8dce2;
+        border-bottom-width:0;
+        tr th, tr td {
+            padding: 4px 0;
+        }
+        tr td {
+            border-bottom: 1px solid #d8dce2;
+        }
+    }
+    .table-mod-hd {
+        border-bottom-width: 1px;
+        tr th {
+            font-weight: bold;
+        }
+    }
+}
+
+.detail-form {
+    border:2px solid #d8dce2;
+    margin-bottom: 45px;
+    .table-mod-wrap {
+        tr th,
+        tr td {
+            padding:10px;
+            text-align: left;
+        }
+        .th-bg {
+            background-color:#f4f5f9;
+        }
+        .edit-title {
+            padding-left: 40px;
+            h2 {
+                font-size:$baseFontSize+2px;
+                select {
+                    margin-left:5px;
+                    height:30px;
+                    padding:0 4px;
+                }
+            }
+        }
+        .detail-mod-w1 {
+            width:20%;
+        }
+        .detail-mod-w2 {
+            width: 80%;
+        }
+        .edit-input {
+            width:335px;
+            height: 28px;
+            padding-left:5px;
+            border:1px solid #d8dce2;
+            background-color:#f9f9f9;
+            line-height: 28px;
+        }
+        td select {
+            margin-right:10px;
+            height:30px;
+            padding:0 4px;
+            border:1px solid #d8dce2;
+            background-color:#f9f9f9;
+        }
+        .detail-btn {
+            text-align:center;
+        }
+    }
+}
+
+.detail-box {
+    .site-control {
+        label {
+            width: 60px;
+            text-align: right;
+        }
+        .site-control-item {
+            margin-bottom:10px;
+            .site-input {
+                background-color:#f9f9f9;
+            }
+        }
+    }
+}
