@@ -202,63 +202,26 @@
                                 <div class="count-item count-item-group">
                                     <div class="count-group">
                                         <input type="button" value="-" class="count-cut">
-                                        <input type="text" name="" id="" class="count-value" value="1">
+                                        <input type="text" name="" id="" class="count-value" value="0">
                                         <input type="button" value="+" class="count-add">
                                     </div>
                                     <span>（库存5）</span>
                                 </div>
                                 <div class="count-item">
-                                    <input type="button" value="添加" class="site-btn site-btn-ctn">
+                                    <input type="button" value="添加" class="site-btn site-btn-ctn J_ctnAdd">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="detail-box detail-control-table">
                         <div class="detail-hd">
-                            <h2>已添加 <span>5</span> 件</h2>
+                            <h2>已添加 <span id="J_count">0</span> 件</h2>
                             <div class="total-price">
-                                <b>总金额 <span>¥20222</span></b>
+                                <b>总金额 <span id="J_totalPrice">¥0</span></b>
                             </div>
                         </div>
-                        <div class="detail-bd table-mod-viewport">
-                            <table class="table-mod-wrap">
-                                <tr class="table-mod-hd">
-                                    <th>箱型</th>
-                                    <th>数量</th>
-                                    <th>金额</th>
-                                    <th>操作</th>
-                                </tr>
-                                <tr>
-                                    <td>20'</td>
-                                    <td>1</td>
-                                    <td>3456</td>
-                                    <td><a href="###" class="detele-ctn">删除</a></td>
-                                </tr>
-                                <tr>
-                                    <td>20'</td>
-                                    <td>1</td>
-                                    <td>3456</td>
-                                    <td><a href="###" class="detele-ctn">删除</a></td>
-                                </tr>
-                                <tr>
-                                    <td>20'</td>
-                                    <td>1</td>
-                                    <td>3456</td>
-                                    <td><a href="###" class="detele-ctn">删除</a></td>
-                                </tr>
-                                <tr>
-                                    <td>20'</td>
-                                    <td>1</td>
-                                    <td>3456</td>
-                                    <td><a href="###" class="detele-ctn">删除</a></td>
-                                </tr>
-                                <tr>
-                                    <td>20'</td>
-                                    <td>1</td>
-                                    <td>3456</td>
-                                    <td><a href="###" class="detele-ctn">删除</a></td>
-                                </tr>
-                            </table>
+                        <div class="detail-bd table-mod-viewport" id="J_addCtnTable">
+                            
                         </div>
                     </div>
                 </div>

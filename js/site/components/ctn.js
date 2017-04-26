@@ -229,12 +229,12 @@ Mini.define('ctn', ['source', 'render'], function(source, render){
             return this.data[size];
         },
         calculateStock: function(stock) {
-            var stock = this.stock-stock,
-                selected = this.selected;
-            this.data[selected]['stock'] = Number(stock);
+            var stock = this.stock-stock;
             render.renderStock(stock);
         },
         updateStock: function(nowStock) {
+            var selected = this.selected;
+            this.data[selected]['stock'] = Number(nowStock);
             this.stock = nowStock;
         },
         calculateCount: function(count){
@@ -296,6 +296,10 @@ Mini.define('ctn', ['source', 'render'], function(source, render){
             ctn['price'] = oldPrice+price;
             return ctn;
         },
+        initCtnList: function(size) {
+            var ctn = _.find(this.data['ctnList'],{size:size});
+            ctn['count'] = ctn['price'] = 0;
+        },  
         ctnAdd: function() {
             if(this.value<=0) {
                 return alert('请输入数量!');
@@ -346,9 +350,9 @@ Mini.define('ctn', ['source', 'render'], function(source, render){
                 totalCount = this.data['totalCount'],
                 totalPrice = this.data['totalPrice'];
             this.list.splice(index,1);
-            console.log(this.list)
             this.calculateCount(-count);
             this.calculateTotal(-price);
+            this.initCtnList(size);
             if(size == this.selected) {
                 this.calculateStock(-count);
                 this.updateStock(this.stock+count);
